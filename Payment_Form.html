@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+*{box-sizing: border-box;}
+
+body{font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 15px 30px;font-size: 17px; padding: 8px;}
+
+.container{background-color: #f2f2f2;
+padding: 5px 20px 15px 20px; border: 1px solid lightgray;border-radius: 4px;}
+
+input[type=text],input[type=email],input[ type=password],input[type=number],input[type=date],select,textarea{width: 100%;
+    padding: 12px; border: 1px solid #ccc; border-radius: 5px; margin: 7px;}
+
+.main_heading{text-align: center; background-color: aqua; width: 100%; height: 100px; margin: 10px;padding: 15px;}
+
+input[type=submit]{background-color: rgb(68, 0, 255); color: white; padding: 15px; width: 10%; 
+    border-radius: 10px; margin: 10px; cursor: pointer; border: none;}
+    
+input[type=submit]:hover{background-color: green;}
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+     <div class="container">
+    <h1 class="main_heading">Payment Form</h1> <hr>
+    <h1>User Information</h1> 
+    <label for="name">NAME :</label>
+    <input type="text" name="name" id="name" placeholder="Enter a User Name " required> <br><br>
+    <!--Gender-->
+    <fieldset > <legend>
+<label  for="gender"  >Gender</label></legend>
+<label for="male" >MALE</label>
+<input type="radio" name="gender" id="male" >
+<label for="female">FEMALE</label>
+<input type="radio" name="gender" id="female" ></fieldset> <br><br>
+<!--  contact information -->
+<label for="">ADDRESS :</label> 
+<textarea name="address" id="address" cols="100" rows="10" placeholder="Enter a User Address"></textarea> <br><br>
+<label  for="email" >Email :</label>
+<input type="email" name="email" id="email" placeholder="Enter a User Email" required> <br><br> 
+<label for="pincode">Pincode :</label>
+<input type="number" name="number" id="number" placeholder="Enter a User a PinCode"> <br><br>
+<!-- payment information -->
+<h1>Payment Information</h1>
+<label for="" >Card Type :</label>
+<select>
+<option value="" >--Select Card Type--</option>
+<option value="visa">VISA</option>
+<option value="rupay">RUPAY</option>
+<option value="mastercard">MASTERCARD</option>
+</select> <br><br>
+<label for="card number">Card Number :</label>
+<input type="password" name="card number" id="card number" placeholder="Enter a User Card Number" required> <br><br>
+<label for="expiration date">Expiration Date :</label>
+<input type="date" name="expiration date" id="expiration date" required> <br><br>
+<label for="cvv">CVV :</label>
+<input type="password" name="cvv" id="cvv" placeholder="Enter a Card CVV Number" required> <br><br>
+<input type="submit" value="Pay Now"> </div>
+</form>
+
+
+<script src="project.js"></script>
+</body>
+</html>
